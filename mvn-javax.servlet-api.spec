@@ -4,15 +4,10 @@
 #
 Name     : mvn-javax.servlet-api
 Version  : 3.1.0
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar
 Source0  : https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar
 Source1  : https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom
-Source2  : https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar
-Source3  : https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.3/servlet-api-2.3.pom
-Source4  : https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.4/servlet-api-2.4.pom
-Source5  : https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar
-Source6  : https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CDDL-1.0
@@ -40,21 +35,6 @@ cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/javax/servlet/javax.ser
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/javax/servlet/javax.servlet-api/3.1.0
 cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.3
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.3
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.pom
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.4
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4.pom
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.5
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.5
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom
-
 
 %files
 %defattr(-,root,root,-)
@@ -63,8 +43,3 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/javax/servlet/servlet-a
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar
 /usr/share/java/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom
-/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar
-/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.pom
-/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4.pom
-/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar
-/usr/share/java/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom
